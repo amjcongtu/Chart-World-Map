@@ -1,0 +1,12 @@
+.menu{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: black;
+   
+}
+.menu .link{
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+body {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  text-overflow: ellipsis;
+  vertical-align: initial;
+  display: block !important;
+  width: 100% !important;
+}
+.leaflet-control{
+  /* display: none; */
+}
