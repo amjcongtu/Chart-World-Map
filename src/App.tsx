@@ -6,6 +6,7 @@ import "./App.css";
 import React from "react";
 import WorldMap from "./pages/WorldMap";
 import Chart from "./pages/Chart";
+import Loading from "./components/Loading";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -34,7 +35,7 @@ const App = () => {
               <Route
                 index
                 element={
-                  <React.Suspense fallback={<div>Loading...</div>}>
+                  <React.Suspense fallback={<Loading/>}>
                     <ChartComponent />
                   </React.Suspense>
                 }
@@ -43,7 +44,7 @@ const App = () => {
               <Route
                 path="/world-map"
                 element={
-                  <React.Suspense fallback={<div>Loading...</div>}>
+                  <React.Suspense fallback={<Loading/>}>
                     <WorldMapComponent />
                   </React.Suspense>
                 }
